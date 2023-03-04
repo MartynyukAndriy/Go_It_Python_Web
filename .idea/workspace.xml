@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2dd9c948-fecd-4097-8f78-db84ad9e4e8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HW2_Poetry/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/.idea/HW_2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/Helper/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/Helper/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/Helper/address_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/Helper/address_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/Helper/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/Helper/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/Helper/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/Helper/classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/Helper/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/Helper/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/Helper/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/Helper/notes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/Helper/sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/Helper/sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/Helper/translate.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/Helper/translate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW2_Poetry/setup.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2LvZnLVrxjc6DAR7WVqQgt7X0Bi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Go_It\Python_Course\Module2_Web\Go_It_Python_Web\HW2_Poetry" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2dd9c948-fecd-4097-8f78-db84ad9e4e8e" name="Changes" comment="" />
+      <created>1676753683461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676753683461</updated>
+    </task>
+    <servers />
+  </component>
+</project>
