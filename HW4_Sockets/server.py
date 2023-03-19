@@ -8,8 +8,11 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from threading import Thread
 from datetime import datetime
 
+# from jinja2 import Environment, FileSystemLoader
+
 
 BASE_DIR = pathlib.Path()
+# env = Environment(loader=FileSystemLoader('templates'))
 BUFFER_SIZE = 1024
 PORT_HTTP = 5000
 SOCKET_HOST = '127.0.0.1'
@@ -63,6 +66,16 @@ class TheBestFastApp(BaseHTTPRequestHandler):
         self.end_headers()
         with open(filename, 'rb') as fd:
             self.wfile.write(fd.read())
+
+    # def render_template(self, filename):
+    #     self.send_response(200)
+    #     self.send_header('Content-type', 'text/html')
+    #     self.end_headers()
+    #     with open('storage/blog.json', 'rb') as fd:
+    #         blogs = json.load(fd)
+    #     template = env.get_template(filename)
+    #     html = template.render(title="Our Blog", blogs=blogs)
+    #     self.wfile.write(html.encode())
 
 
 def save_data_from_http_server(data):
