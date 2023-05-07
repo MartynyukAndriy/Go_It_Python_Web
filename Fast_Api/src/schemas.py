@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date
 from enum import Enum
 
 from pydantic import BaseModel, EmailStr, Field
@@ -9,7 +9,7 @@ class ContactModel(BaseModel):
     surname: str = Field(min_length=1, max_length=20)
     email: EmailStr
     phone: str
-    birthday: str
+    birthday: date
     description: str
 
 
@@ -19,7 +19,7 @@ class ContactResponse(BaseModel):
     surname: str = 'Surname'
     email: EmailStr
     phone: str = '0993334567'
-    birthday: str
+    birthday: date
     description: str
 
     class Config:

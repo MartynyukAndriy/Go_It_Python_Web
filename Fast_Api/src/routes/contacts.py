@@ -16,6 +16,12 @@ async def get_contacts(db: Session = Depends(get_db)):
     return contacts
 
 
+@router.get('/birthdays', response_model=List[ContactResponse])
+async def get_contacts_by_birthdays(db: Session = Depends(get_db)):
+    contacts = await repository_contacts.get_contacts_by_birthdays(db)
+    return contacts
+
+
 @router.get('/{contact_id}', response_model=ContactResponse)
 async def get_contact_by_id(contact_id: int = Path(ge=1), db: Session = Depends(get_db)):
     contact = await repository_contacts.get_contact_by_id(contact_id, db)
