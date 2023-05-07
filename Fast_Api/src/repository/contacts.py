@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
 from src.database.models import Contact
-from src.schemas import ContactModel
+from src.schemas import ContactModel, ContactName
 
 
 async def get_contacts(db: Session):
@@ -14,6 +14,14 @@ async def get_contact_by_id(contact_id: int, db: Session):
 
 async def get_contact_by_email(email, db: Session):
     return db.query(Contact).filter_by(email=email).first()
+
+
+async def get_contact_by_name(contact_name, db: Session):
+    return db.query(Contact).filter_by(name=contact_name).all()
+
+
+async def get_contact_by_surname(contact_surname, db: Session):
+    return db.query(Contact).filter_by(surname=contact_surname).all()
 
 
 async def create_contact(body: ContactModel, db: Session):

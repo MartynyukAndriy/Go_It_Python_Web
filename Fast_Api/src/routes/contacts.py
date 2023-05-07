@@ -4,7 +4,7 @@ from typing import List
 from sqlalchemy.orm import Session
 
 from src.database.db import get_db
-from src.schemas import ContactResponse, ContactModel
+from src.schemas import ContactResponse, ContactModel, ContactName
 from src.repository import contacts as repository_contacts
 
 router = APIRouter(prefix='/contacts', tags=['contacts'])
@@ -21,6 +21,30 @@ async def get_contact_by_id(contact_id: int = Path(ge=1), db: Session = Depends(
     contact = await repository_contacts.get_contact_by_id(contact_id, db)
     if not contact:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No such contact")
+    return contact
+
+
+@router.get('/search_by_name/{contact_name}', response_model=List[ContactResponse])
+async def get_contact_by_name(contact_name: str, db: Session = Depends(get_db)):
+    contact = await repository_contacts.get_contact_by_name(contact_name, db)
+    if not contact:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No such contact")
+    return contact
+
+
+@router.get('/search_by_surname/{contact_surname}', response_model=List[ContactResponse])
+async def get_contact_by_surname(contact_surname: str, db: Session = Depends(get_db)):
+    contact = await repository_contacts.get_contact_by_surname(contact_surname, db)
+    if not contact:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No such contact")
+    return contact
+
+
+@router.get('/search_by_email/{contact_email}', response_model=ContactResponse)
+async def get_contact_by_email(contact_email: str, db: Session = Depends(get_db)):
+    contact = await repository_contacts.get_contact_by_email(contact_email, db)
+    if not contact:
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail='Email already exists')
     return contact
 
 
@@ -47,3 +71,6 @@ async def remove_contact(contact_id: int = Path(ge=1), db: Session = Depends(get
     if not contact:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No such contact")
     return contact
+
+
+
