@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2dd9c948-fecd-4097-8f78-db84ad9e4e8e" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/HW10_Django/.idea/HW10_Django.iml" afterDir="false" />
@@ -50,31 +53,7 @@
       <change afterPath="$PROJECT_DIR$/HW10_Django/hw_project/utils/quotes.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/HW10_Django/poetry.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/HW10_Django/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/.idea/Module11_FastApi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/poetry.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/src/conf/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/src/database/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/src/database/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/src/repository/cats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/src/repository/owners.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/src/routes/cats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/src/routes/owners.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Module11_FastApi/src/schemas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fast_Api/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Fast_Api/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fast_Api/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Fast_Api/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fast_Api/src/database/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fast_Api/src/database/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fast_Api/src/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fast_Api/src/schemas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Module_12_Auth/base/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Module_12_Auth/base/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Module_12_Auth/base/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Module_12_Auth/base/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Module_12_Auth/base/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Module_12_Auth/base/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fast_Api_Auth/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Fast_Api_Auth/.idea/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +68,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Fast_Api_Auth" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LvZnLVrxjc6DAR7WVqQgt7X0Bi" />
   <component name="ProjectViewState">
