@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fast_Api_Auth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HW10_Django" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tests/Module11_FastApi" vcs="Git" />
   </component>
 </project>

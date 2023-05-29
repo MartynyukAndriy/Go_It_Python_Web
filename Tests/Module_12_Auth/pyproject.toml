@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "module-12-auth"
+version = "0.1.0"
+description = ""
+authors = ["MartynyukAndriy <andriy.martynyuk.if@gmail.com>"]
+readme = "README.md"
+packages = [{include = "module_12_auth"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+fastapi = {extras = ["all"], version = "^0.95.1"}
+uvicorn = "^0.22.0"
+sqlalchemy = "^2.0.13"
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

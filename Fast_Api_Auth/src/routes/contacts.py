@@ -9,6 +9,7 @@ from src.repository import contacts as repository_contacts
 from src.database.models import Role, User
 from src.services.auth import auth_service
 from src.services.roles import RolesAccess
+from fastapi_limiter.depends import RateLimiter
 
 router = APIRouter(prefix='/contacts', tags=['contacts'])
 
@@ -18,7 +19,8 @@ access_update = RolesAccess([Role.admin])
 access_delete = RolesAccess([Role.admin])
 
 
-@router.get('/', response_model=List[ContactResponse], dependencies=[Depends(access_get)])
+@router.get('/', response_model=List[ContactResponse],
+            dependencies=[Depends(RateLimiter(times=5, seconds=2)), Depends(access_get)])
 async def get_contacts(db: Session = Depends(get_db), _: User = Depends(auth_service.get_current_user)):
     contacts = await repository_contacts.get_contacts(db)
     return contacts
@@ -68,7 +70,7 @@ async def get_contact_by_email(contact_email: str, db: Session = Depends(get_db)
 
 
 @router.post('/', response_model=ContactResponse, status_code=status.HTTP_201_CREATED,
-             dependencies=[Depends(access_get)])
+             dependencies=[Depends(RateLimiter(times=2, seconds=5)), Depends(access_get)])
 async def create_contact(body: ContactModel, db: Session = Depends(get_db),
                          _: User = Depends(auth_service.get_current_user)):
     contact = await repository_contacts.get_contact_by_email(body.email, db)

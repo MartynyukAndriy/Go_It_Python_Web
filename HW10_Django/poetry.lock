@@ -2,14 +2,14 @@
 
 [[package]]
 name = "asgiref"
-version = "3.6.0"
+version = "3.7.2"
 description = "ASGI specs, helper code, and adapters"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "asgiref-3.6.0-py3-none-any.whl", hash = "sha256:71e68008da809b957b7ee4b43dbccff33d1b23519fb8344e33f049897077afac"},
-    {file = "asgiref-3.6.0.tar.gz", hash = "sha256:9567dfe7bd8d3c8c892227827c41cce860b368104c3431da67a0c5a65a949506"},
+    {file = "asgiref-3.7.2-py3-none-any.whl", hash = "sha256:89b2ef2247e3b562a16eef663bc0e2e703ec6468e2fa8a5cd61cd449786d4f6e"},
+    {file = "asgiref-3.7.2.tar.gz", hash = "sha256:9e0ce3aa93a819ba5b45120216b23878cf6e8525eb3848653452b4192b92afed"},
 ]
 
 [package.extras]
@@ -17,14 +17,14 @@ tests = ["mypy (>=0.800)", "pytest", "pytest-asyncio"]
 
 [[package]]
 name = "django"
-version = "4.2"
+version = "4.2.1"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "Django-4.2-py3-none-any.whl", hash = "sha256:ad33ed68db9398f5dfb33282704925bce044bef4261cd4fb59e4e7f9ae505a78"},
-    {file = "Django-4.2.tar.gz", hash = "sha256:c36e2ab12824e2ac36afa8b2515a70c53c7742f0d6eaefa7311ec379558db997"},
+    {file = "Django-4.2.1-py3-none-any.whl", hash = "sha256:066b6debb5ac335458d2a713ed995570536c8b59a580005acb0732378d5eb1ee"},
+    {file = "Django-4.2.1.tar.gz", hash = "sha256:7efa6b1f781a6119a10ac94b4794ded90db8accbe7802281cd26f8664ffed59c"},
 ]
 
 [package.dependencies]
